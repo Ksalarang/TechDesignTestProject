@@ -159,7 +159,7 @@ Transform:
   - {fileID: 412763039}
   - {fileID: 1457834315}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
@@ -452,7 +452,7 @@ GameObject:
   - component: {fileID: 1213238177}
   - component: {fileID: 1213238176}
   m_Layer: 0
-  m_Name: Controllers
+  m_Name: SceneController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -470,6 +470,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac2b2955ef124acb8d406e7898e9f89f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pirate: {fileID: 1639638540}
+  pirateAnimationLabel: {fileID: 2133919774}
 --- !u!4 &1213238177
 Transform:
   m_ObjectHideFlags: 0
@@ -490,6 +492,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6590328666926743213, guid: 2e80dc13f4d219a4b9bf640d2537acf3, type: 3}
   m_PrefabInstance: {fileID: 1706389688}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1639638540 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 608263980901613152, guid: ef5cc025ecf660c43bb06cfccb90de2f, type: 3}
+  m_PrefabInstance: {fileID: 807976018}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0ab43711bdc4999ba1d873e1ceb5e18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1706389688
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -551,6 +564,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e80dc13f4d219a4b9bf640d2537acf3, type: 3}
+--- !u!114 &2133919774 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6883802057003200731, guid: e4e5074f619d8f64fb04a63d47f25f13, type: 3}
+  m_PrefabInstance: {fileID: 1906611223899101898}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1906611223899101898
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -558,6 +582,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1673510259197691867, guid: e4e5074f619d8f64fb04a63d47f25f13, type: 3}
+      propertyPath: m_Name
+      value: pirate_animation_label
+      objectReference: {fileID: 0}
     - target: {fileID: 1906611222384297489, guid: e4e5074f619d8f64fb04a63d47f25f13, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -572,7 +600,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1906611222384297493, guid: e4e5074f619d8f64fb04a63d47f25f13, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1906611222384297493, guid: e4e5074f619d8f64fb04a63d47f25f13, type: 3}
       propertyPath: m_AnchorMax.x

@@ -184,6 +184,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e9d0162d0968014e9f1bdf90963043d, type: 3}
+--- !u!114 &128423941 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 41197779435169240, guid: 6e9d0162d0968014e9f1bdf90963043d, type: 3}
+  m_PrefabInstance: {fileID: 128423940}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 929016fc1c04492381856511edc2d919, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &299947145
 GameObject:
   m_ObjectHideFlags: 0
@@ -463,7 +474,7 @@ GameObject:
   - component: {fileID: 1125711125}
   - component: {fileID: 1125711126}
   m_Layer: 0
-  m_Name: Controllers
+  m_Name: SceneController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -496,6 +507,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0278b5e02572417f92b5dfb387c7d3b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shark: {fileID: 128423941}
+  sharkAnimationLabel: {fileID: 1482868930}
 --- !u!1001 &1482868929
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -503,9 +516,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 551949497695937557, guid: e4e5074f619d8f64fb04a63d47f25f13, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 551949497695937557, guid: e4e5074f619d8f64fb04a63d47f25f13, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 551949497695937557, guid: e4e5074f619d8f64fb04a63d47f25f13, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 225.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 551949497695937557, guid: e4e5074f619d8f64fb04a63d47f25f13, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 395.93
+      objectReference: {fileID: 0}
     - target: {fileID: 594329087062909060, guid: e4e5074f619d8f64fb04a63d47f25f13, type: 3}
       propertyPath: m_Name
       value: prev_scene_button
+      objectReference: {fileID: 0}
+    - target: {fileID: 1673510259197691867, guid: e4e5074f619d8f64fb04a63d47f25f13, type: 3}
+      propertyPath: m_Name
+      value: shark_animation_label
       objectReference: {fileID: 0}
     - target: {fileID: 1906611222384297489, guid: e4e5074f619d8f64fb04a63d47f25f13, type: 3}
       propertyPath: m_Name
@@ -521,7 +554,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1906611222384297493, guid: e4e5074f619d8f64fb04a63d47f25f13, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1906611222384297493, guid: e4e5074f619d8f64fb04a63d47f25f13, type: 3}
       propertyPath: m_AnchorMax.x
@@ -621,6 +654,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4e5074f619d8f64fb04a63d47f25f13, type: 3}
+--- !u!114 &1482868930 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6883802057003200731, guid: e4e5074f619d8f64fb04a63d47f25f13, type: 3}
+  m_PrefabInstance: {fileID: 1482868929}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1530670354 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7980461369058884800, guid: 6e9d0162d0968014e9f1bdf90963043d, type: 3}
@@ -662,5 +706,5 @@ Transform:
   - {fileID: 1616964043}
   - {fileID: 1530670354}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

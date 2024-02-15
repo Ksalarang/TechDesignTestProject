@@ -7,6 +7,9 @@ public class Pirate : MonoBehaviour, IPointerClickHandler {
     const string Idle = "Idle";
     const string Attack1 = "Attack_1";
     const string Attack2 = "Attack_2";
+
+    public event PirateAnimationStarted animationStarted;
+    
     new SkeletonAnimation animation;
 
     void Awake() {
@@ -14,6 +17,9 @@ public class Pirate : MonoBehaviour, IPointerClickHandler {
     }
 
     void Start() {
+        animation.AnimationState.Start += entry => {
+            animationStarted?.Invoke(entry.animation.name);
+        };
         animation.AnimationState.SetAnimation(0, Idle, true);
     }
 
@@ -22,5 +28,9 @@ public class Pirate : MonoBehaviour, IPointerClickHandler {
         animation.AnimationState.SetAnimation(0, animationName, false);
         animation.AnimationState.AddAnimation(0, Idle, true, 0);
     }
+
+    public string getCurrentAnimation() => animation.AnimationName;
 }
+
+public delegate void PirateAnimationStarted(string animationName);
 }

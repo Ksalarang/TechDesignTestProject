@@ -10,6 +10,8 @@ public class Shark : MonoBehaviour, IPointerClickHandler {
     const string Attack1 = "Attack_1";
     const string Attack2 = "Attack_2";
     const string Attack3 = "Attack_3";
+
+    public event SharkAnimationStarted animationStarted;
     
     new SkeletonAnimation animation;
     List<string> animationList;
@@ -22,6 +24,9 @@ public class Shark : MonoBehaviour, IPointerClickHandler {
     }
 
     void Start() {
+        animation.AnimationState.Start += entry => {
+            animationStarted?.Invoke(entry.animation.name);
+        };
         animation.AnimationState.SetAnimation(0, Walk, true);
     }
 
@@ -30,5 +35,9 @@ public class Shark : MonoBehaviour, IPointerClickHandler {
         animation.AnimationState.SetAnimation(0, nextAnimation, false);
         animation.AnimationState.AddAnimation(0, Walk, true, 0);
     }
+
+    public string getCurrentAnimation() => animation.AnimationName;
 }
+
+public delegate void SharkAnimationStarted(string animationName);
 }
