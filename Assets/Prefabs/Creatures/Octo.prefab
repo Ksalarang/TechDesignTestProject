@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2599271030515251005}
   - component: {fileID: 2599271030515251004}
   m_Layer: 0
-  m_Name: Octo
+  m_Name: octo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -82,7 +82,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &2599271030515251004
 MonoBehaviour:
