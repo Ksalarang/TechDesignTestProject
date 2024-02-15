@@ -4,9 +4,9 @@ using UnityEngine.EventSystems;
 
 namespace Creatures {
 public class Pirate : MonoBehaviour, IPointerClickHandler {
-    static readonly string Idle = "Idle";
-    static readonly string Attack1 = "Attack_1";
-    static readonly string Attack2 = "Attack_2";
+    const string Idle = "Idle";
+    const string Attack1 = "Attack_1";
+    const string Attack2 = "Attack_2";
     new SkeletonAnimation animation;
 
     void Awake() {

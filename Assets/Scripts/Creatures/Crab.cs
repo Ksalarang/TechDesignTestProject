@@ -7,10 +7,11 @@ public class Crab : MonoBehaviour {
 
     new Transform transform;
     new SkeletonAnimation animation;
+    
     Vector3 initialPosition;
-    [SerializeField] Vector3 destination;
-    [SerializeField] float time;
-    [SerializeField] float totalTime;
+    Vector3 destination;
+    float time;
+    float totalTime;
 
     void Awake() {
         transform = base.transform;
