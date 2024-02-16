@@ -133,7 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 92796446}
   m_Layer: 0
-  m_Name: Sprites
+  m_Name: sprites
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -275,7 +275,7 @@ GameObject:
   - component: {fileID: 299947147}
   - component: {fileID: 299947146}
   m_Layer: 0
-  m_Name: EventSystem
+  m_Name: event_system
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -419,7 +419,7 @@ GameObject:
   - component: {fileID: 1125711125}
   - component: {fileID: 1125711126}
   m_Layer: 0
-  m_Name: SceneController
+  m_Name: scene_controller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -555,7 +555,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1906611222384297489, guid: e4e5074f619d8f64fb04a63d47f25f13, type: 3}
       propertyPath: m_Name
-      value: Canvas
+      value: canvas
       objectReference: {fileID: 0}
     - target: {fileID: 1906611222384297493, guid: e4e5074f619d8f64fb04a63d47f25f13, type: 3}
       propertyPath: m_Pivot.x
@@ -795,7 +795,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2139740142}
   m_Layer: 0
-  m_Name: Aniimations
+  m_Name: animations
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
