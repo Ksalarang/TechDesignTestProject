@@ -473,6 +473,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef5cc025ecf660c43bb06cfccb90de2f, type: 3}
+--- !u!114 &947860385 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6790280609498047807, guid: e4e5074f619d8f64fb04a63d47f25f13, type: 3}
+  m_PrefabInstance: {fileID: 1906611223899101898}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &975056352
 GameObject:
   m_ObjectHideFlags: 0
@@ -571,7 +582,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pirate: {fileID: 1639638540}
-  pirateAnimationLabel: {fileID: 2133919774}
+  pirateAnimationLabel: {fileID: 947860385}
 --- !u!4 &1213238177
 Transform:
   m_ObjectHideFlags: 0
@@ -648,17 +659,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e80dc13f4d219a4b9bf640d2537acf3, type: 3}
---- !u!114 &2133919774 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6883802057003200731, guid: e4e5074f619d8f64fb04a63d47f25f13, type: 3}
-  m_PrefabInstance: {fileID: 1906611223899101898}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1906611223899101898
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -761,6 +761,22 @@ PrefabInstance:
     - target: {fileID: 1906611222384297493, guid: e4e5074f619d8f64fb04a63d47f25f13, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3055181648801783435, guid: e4e5074f619d8f64fb04a63d47f25f13, type: 3}
+      propertyPath: m_text
+      value: Scene 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3109998244421142263, guid: e4e5074f619d8f64fb04a63d47f25f13, type: 3}
+      propertyPath: m_Name
+      value: pirate_animation_label
+      objectReference: {fileID: 0}
+    - target: {fileID: 3687300090325363001, guid: e4e5074f619d8f64fb04a63d47f25f13, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 60.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3687300090325363001, guid: e4e5074f619d8f64fb04a63d47f25f13, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -201.7
       objectReference: {fileID: 0}
     - target: {fileID: 7100754225014603107, guid: e4e5074f619d8f64fb04a63d47f25f13, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target

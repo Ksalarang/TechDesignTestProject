@@ -162,6 +162,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2139740142}
     m_Modifications:
+    - target: {fileID: 1932643543131607495, guid: 6e9d0162d0968014e9f1bdf90963043d, type: 3}
+      propertyPath: m_Size.x
+      value: 6.5333457
+      objectReference: {fileID: 0}
+    - target: {fileID: 1932643543131607495, guid: 6e9d0162d0968014e9f1bdf90963043d, type: 3}
+      propertyPath: m_Size.y
+      value: 6.514995
+      objectReference: {fileID: 0}
+    - target: {fileID: 1932643543131607495, guid: 6e9d0162d0968014e9f1bdf90963043d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1932643543131607495, guid: 6e9d0162d0968014e9f1bdf90963043d, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.5703394
+      objectReference: {fileID: 0}
+    - target: {fileID: 1932643543131607495, guid: 6e9d0162d0968014e9f1bdf90963043d, type: 3}
+      propertyPath: m_Offset.y
+      value: 3.2081563
+      objectReference: {fileID: 0}
     - target: {fileID: 7980461369058884800, guid: 6e9d0162d0968014e9f1bdf90963043d, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -568,7 +588,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shark: {fileID: 128423941}
-  sharkAnimationLabel: {fileID: 1482868930}
+  sharkAnimationLabel: {fileID: 1233925822}
+--- !u!114 &1233925822 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6790280609498047807, guid: e4e5074f619d8f64fb04a63d47f25f13, type: 3}
+  m_PrefabInstance: {fileID: 1482868929}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1482868929
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -688,9 +719,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3055181648801783435, guid: e4e5074f619d8f64fb04a63d47f25f13, type: 3}
+      propertyPath: m_text
+      value: Scene 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3109998244421142263, guid: e4e5074f619d8f64fb04a63d47f25f13, type: 3}
+      propertyPath: m_Name
+      value: shark_animation_label
+      objectReference: {fileID: 0}
     - target: {fileID: 3158693250332789615, guid: e4e5074f619d8f64fb04a63d47f25f13, type: 3}
       propertyPath: m_text
       value: Scene 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3687300090325363001, guid: e4e5074f619d8f64fb04a63d47f25f13, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -119
+      objectReference: {fileID: 0}
+    - target: {fileID: 3687300090325363001, guid: e4e5074f619d8f64fb04a63d47f25f13, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -436.1
       objectReference: {fileID: 0}
     - target: {fileID: 3831775817898883058, guid: e4e5074f619d8f64fb04a63d47f25f13, type: 3}
       propertyPath: m_SizeDelta.x
@@ -699,6 +746,14 @@ PrefabInstance:
     - target: {fileID: 6779654839423056929, guid: e4e5074f619d8f64fb04a63d47f25f13, type: 3}
       propertyPath: m_text
       value: Previous Scene
+      objectReference: {fileID: 0}
+    - target: {fileID: 6790280609498047807, guid: e4e5074f619d8f64fb04a63d47f25f13, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 6790280609498047807, guid: e4e5074f619d8f64fb04a63d47f25f13, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7100754225014603107, guid: e4e5074f619d8f64fb04a63d47f25f13, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -714,17 +769,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4e5074f619d8f64fb04a63d47f25f13, type: 3}
---- !u!114 &1482868930 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6883802057003200731, guid: e4e5074f619d8f64fb04a63d47f25f13, type: 3}
-  m_PrefabInstance: {fileID: 1482868929}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1530670354 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7980461369058884800, guid: 6e9d0162d0968014e9f1bdf90963043d, type: 3}
@@ -746,7 +790,7 @@ GameObject:
   - component: {fileID: 1980782017}
   - component: {fileID: 1980782018}
   m_Layer: 0
-  m_Name: beach-background
+  m_Name: beach_background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
