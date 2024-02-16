@@ -520,7 +520,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2603481996682847851, guid: e8a9c021eb9b42046b5ec614f3c075fe, type: 3}
       propertyPath: m_text
-      value: Next scene
+      value: Change scene
       objectReference: {fileID: 0}
     - target: {fileID: 5699994666397412792, guid: e8a9c021eb9b42046b5ec614f3c075fe, type: 3}
       propertyPath: m_Pivot.x

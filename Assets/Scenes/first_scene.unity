@@ -688,6 +688,14 @@ PrefabInstance:
       propertyPath: m_text
       value: Scene 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3055181648801783435, guid: e4e5074f619d8f64fb04a63d47f25f13, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: eb6d0a3c72386cf4ab7eda92aafa4158, type: 2}
+    - target: {fileID: 3055181648801783435, guid: e4e5074f619d8f64fb04a63d47f25f13, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 3995174328810259885, guid: eb6d0a3c72386cf4ab7eda92aafa4158, type: 2}
     - target: {fileID: 3109998244421142263, guid: e4e5074f619d8f64fb04a63d47f25f13, type: 3}
       propertyPath: m_Name
       value: pirate_animation_label
@@ -699,6 +707,22 @@ PrefabInstance:
     - target: {fileID: 3687300090325363001, guid: e4e5074f619d8f64fb04a63d47f25f13, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -201.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6779654839423056929, guid: e4e5074f619d8f64fb04a63d47f25f13, type: 3}
+      propertyPath: m_text
+      value: Next scene
+      objectReference: {fileID: 0}
+    - target: {fileID: 6779654839423056929, guid: e4e5074f619d8f64fb04a63d47f25f13, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: eb6d0a3c72386cf4ab7eda92aafa4158, type: 2}
+    - target: {fileID: 6779654839423056929, guid: e4e5074f619d8f64fb04a63d47f25f13, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 3995174328810259885, guid: eb6d0a3c72386cf4ab7eda92aafa4158, type: 2}
+    - target: {fileID: 6790280609498047807, guid: e4e5074f619d8f64fb04a63d47f25f13, type: 3}
+      propertyPath: m_text
+      value: animation
       objectReference: {fileID: 0}
     - target: {fileID: 7100754225014603107, guid: e4e5074f619d8f64fb04a63d47f25f13, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
