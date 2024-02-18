@@ -580,7 +580,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6590328666926743213, guid: 2e80dc13f4d219a4b9bf640d2537acf3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.61
+      value: -3.87
       objectReference: {fileID: 0}
     - target: {fileID: 6590328666926743213, guid: 2e80dc13f4d219a4b9bf640d2537acf3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -640,6 +640,8 @@ MonoBehaviour:
   sharkPunch1: {fileID: 0}
   sharkPunch2: {fileID: 0}
   sharkFall: {fileID: 0}
+  beachBackground: {fileID: 0}
+  isFirstScene: 0
 --- !u!82 &1754121088
 AudioSource:
   m_ObjectHideFlags: 0
