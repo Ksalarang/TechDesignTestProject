@@ -526,13 +526,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio:
-    pirateAttack1: {fileID: 8300000, guid: d9b09504c6aecef40a19f28c8e6ad74f, type: 3}
-    pirateAttack2: {fileID: 8300000, guid: a2db0113db6bf6d4985c74182ae14612, type: 3}
-    shipBackground: {fileID: 8300000, guid: 058afafcdfd521645a079bd39c78c3ea, type: 3}
-    sharkPunch1: {fileID: 8300000, guid: df4cf4f473f97f54cbe91f041a0060ee, type: 3}
-    sharkPunch2: {fileID: 8300000, guid: b74f7de62a3ff6c49a867fabc45cfb4c, type: 3}
-    sharkFall: {fileID: 8300000, guid: 6a113831a46a37c479b8bae0f0902db9, type: 3}
-    beachBackground: {fileID: 8300000, guid: 20481e1b46b11ce46b4983dec63404f0, type: 3}
+    pirateAttack1: {fileID: 8300000, guid: 95c965b17166bd14ebb6728e1a5692b3, type: 3}
+    pirateAttack2: {fileID: 8300000, guid: 1950693d52608e141b430ef2684bbafc, type: 3}
+    shipBackground: {fileID: 8300000, guid: 1cffb788700a94f469f4afce637e357d, type: 3}
+    sharkPunch1: {fileID: 8300000, guid: 988c2e4571a505849b5fc1b2f854fe9a, type: 3}
+    sharkPunch2: {fileID: 8300000, guid: 8af72a43d848d9e4f80ab2c82429b29b, type: 3}
+    sharkFall: {fileID: 8300000, guid: 1ccabd9cf6fffdb448a23af2ccad6501, type: 3}
+    beachBackground: {fileID: 8300000, guid: c78ee69d05ec84445bcce0852164119d, type: 3}
 --- !u!4 &1048654693
 Transform:
   m_ObjectHideFlags: 0
