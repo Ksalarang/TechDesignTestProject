@@ -13,6 +13,7 @@ public class Shark : MonoBehaviour, IPointerClickHandler {
     const string Attack3 = "Attack_3";
 
     [SerializeField] float rightPunchDelayOffset;
+    [SerializeField] float mixDuration;
 
     [HideInInspector] public AudioPlayer audioPlayer;
 
@@ -33,13 +34,12 @@ public class Shark : MonoBehaviour, IPointerClickHandler {
         animation.AnimationState.Start += entry => {
             animationStarted?.Invoke(entry.animation.name);
         };
-        animation.AnimationState.SetAnimation(0, Walk, true);
     }
 
     public void OnPointerClick(PointerEventData eventData) {
         var nextAnimation = getNextAnimation();
         animation.AnimationState.SetAnimation(0, nextAnimation, false);
-        animation.AnimationState.AddAnimation(0, Walk, true, 0);
+        animation.AnimationState.AddEmptyAnimation(0, mixDuration, 0);
         playSound(nextAnimation);
     }
 
