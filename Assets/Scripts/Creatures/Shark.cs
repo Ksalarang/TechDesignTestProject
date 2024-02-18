@@ -23,11 +23,12 @@ public class Shark : MonoBehaviour, IPointerClickHandler {
     
     new SkeletonAnimation animation;
     List<string> animationList;
+    int currentIndex;
 
     void Awake() {
         animation = GetComponent<SkeletonAnimation>();
         animationList = new List<string> {
-            Dead, Attack1, Attack2, Attack3
+            Attack1, Attack2, Attack3, Dead,
         };
     }
 
@@ -39,13 +40,20 @@ public class Shark : MonoBehaviour, IPointerClickHandler {
     }
 
     public void OnPointerClick(PointerEventData eventData) {
-        var nextAnimation = animationList[Random.Range(0, animationList.Count)];
+        var nextAnimation = getNextAnimation();
         animation.AnimationState.SetAnimation(0, nextAnimation, false);
         animation.AnimationState.AddAnimation(0, Walk, true, 0);
         playSound(nextAnimation);
     }
 
     public string getCurrentAnimation() => animation.AnimationName;
+
+    string getNextAnimation() {
+        if (currentIndex == animationList.Count) {
+            currentIndex = 0;
+        }
+        return animationList[currentIndex++];
+    }
 
     void playSound(string animation) {
         switch (animation) {

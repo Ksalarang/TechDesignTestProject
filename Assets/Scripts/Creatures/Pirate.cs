@@ -18,6 +18,7 @@ public class Pirate : MonoBehaviour, IPointerClickHandler {
     public event PirateAnimationStarted animationStarted;
     
     new SkeletonAnimation animation;
+    bool isFirstAttack;
 
     void Awake() {
         animation = GetComponent<SkeletonAnimation>();
@@ -31,7 +32,8 @@ public class Pirate : MonoBehaviour, IPointerClickHandler {
     }
 
     public void OnPointerClick(PointerEventData eventData) {
-        var animationName = Random.value < 0.5f ? Attack1 : Attack2;
+        var animationName = isFirstAttack ? Attack1 : Attack2;
+        isFirstAttack = !isFirstAttack;
         animation.AnimationState.SetAnimation(0, animationName, false);
         animation.AnimationState.AddAnimation(0, Idle, true, 0);
         playSound(animationName);
