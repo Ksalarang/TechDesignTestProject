@@ -1,5 +1,4 @@
-﻿using System;
-using Creatures;
+﻿using Creatures;
 using Misc;
 using TMPro;
 using UnityEngine;

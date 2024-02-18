@@ -2,7 +2,6 @@
 using Spine.Unity;
 using UnityEngine;
 using UnityEngine.EventSystems;
-using Random = UnityEngine.Random;
 
 namespace Creatures {
 public class Pirate : MonoBehaviour, IPointerClickHandler {
