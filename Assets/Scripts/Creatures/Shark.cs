@@ -58,23 +58,12 @@ public class Shark : MonoBehaviour, IPointerClickHandler {
             case Attack3:
                 audioPlayer.play(AudioPlayer.AudioId.SharkPunch2);
                 var delay = audioPlayer.getAudioLength(AudioPlayer.AudioId.SharkPunch2) + rightPunchDelayOffset;
-                StartCoroutine(delayAction(delay, () => {
-                    audioPlayer.play(AudioPlayer.AudioId.SharkPunch1);
-                }));
+                audioPlayer.play(AudioPlayer.AudioId.SharkPunch1, delay);
                 break;
             case Dead:
                 audioPlayer.play(AudioPlayer.AudioId.SharkFall);
                 break;
         }
-    }
-
-    IEnumerator delayAction(float delay, Action action) {
-        var time = 0f;
-        while (time < delay) {
-            time += Time.deltaTime;
-            yield return null;
-        }
-        action.Invoke();
     }
 }
 

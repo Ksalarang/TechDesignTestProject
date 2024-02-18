@@ -129,6 +129,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0ab43711bdc4999ba1d873e1ceb5e18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attack1OffsetDivisor: 5
+  attack2OffsetDivisor: 4
+  audioPlayer: {fileID: 0}
 --- !u!70 &3029574873137806408
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

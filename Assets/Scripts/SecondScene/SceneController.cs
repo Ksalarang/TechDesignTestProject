@@ -12,13 +12,16 @@ public class SceneController : MonoBehaviour {
 
     [SerializeField] AudioPlayer audioPlayer;
 
+    void Awake() {
+        audioPlayer.isFirstScene = false;
+        shark.audioPlayer = audioPlayer;
+    }
+
     void Start() {
         shark.animationStarted += animationName => {
             sharkAnimationLabel.text = animationName;
         };
         sharkAnimationLabel.text = shark.getCurrentAnimation();
-
-        shark.audioPlayer = audioPlayer;
     }
 
     public void loadPreviousScene() {

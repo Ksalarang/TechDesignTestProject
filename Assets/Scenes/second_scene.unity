@@ -153,7 +153,7 @@ Transform:
   m_Children:
   - {fileID: 1980782017}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &128423940
 PrefabInstance:
@@ -361,9 +361,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23e7b7e59dfb49ef83bf853e905fba8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pirateAttack1: {fileID: 0}
+  pirateAttack2: {fileID: 0}
+  shipBackground: {fileID: 0}
   sharkPunch1: {fileID: 8300000, guid: df4cf4f473f97f54cbe91f041a0060ee, type: 3}
   sharkPunch2: {fileID: 8300000, guid: b74f7de62a3ff6c49a867fabc45cfb4c, type: 3}
   sharkFall: {fileID: 8300000, guid: 6a113831a46a37c479b8bae0f0902db9, type: 3}
+  beachBackground: {fileID: 8300000, guid: 20481e1b46b11ce46b4983dec63404f0, type: 3}
+  isFirstScene: 0
 --- !u!82 &307572157
 AudioSource:
   m_ObjectHideFlags: 0
@@ -473,7 +478,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &525864906 stripped
 MonoBehaviour:
@@ -723,7 +728,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1906611222384297493, guid: e4e5074f619d8f64fb04a63d47f25f13, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1906611222384297493, guid: e4e5074f619d8f64fb04a63d47f25f13, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1043,5 +1048,5 @@ Transform:
   - {fileID: 1616964043}
   - {fileID: 1530670354}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
