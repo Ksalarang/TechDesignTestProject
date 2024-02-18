@@ -114,10 +114,6 @@ PrefabInstance:
       propertyPath: m_text
       value: Scene #
       objectReference: {fileID: 0}
-    - target: {fileID: 1605800437869504410, guid: b88a1ddd218907847a9c4529fa9771d5, type: 3}
-      propertyPath: m_fontStyle
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3105053609806331594, guid: b88a1ddd218907847a9c4529fa9771d5, type: 3}
       propertyPath: m_Name
       value: animation_label
@@ -307,10 +303,6 @@ PrefabInstance:
     - target: {fileID: 1605800437869504410, guid: b88a1ddd218907847a9c4529fa9771d5, type: 3}
       propertyPath: m_fontSize
       value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 1605800437869504410, guid: b88a1ddd218907847a9c4529fa9771d5, type: 3}
-      propertyPath: m_fontStyle
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1605800437869504410, guid: b88a1ddd218907847a9c4529fa9771d5, type: 3}
       propertyPath: m_fontSizeBase
