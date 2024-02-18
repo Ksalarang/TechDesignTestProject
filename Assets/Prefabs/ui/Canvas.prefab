@@ -424,6 +424,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: animation_label
       objectReference: {fileID: 0}
+    - target: {fileID: 7159580106081813586, guid: b88a1ddd218907847a9c4529fa9771d5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7180690572866800074, guid: b88a1ddd218907847a9c4529fa9771d5, type: 3}
       propertyPath: m_text
       value: Scene 1

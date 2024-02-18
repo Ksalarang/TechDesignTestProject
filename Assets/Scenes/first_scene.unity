@@ -237,7 +237,7 @@ Transform:
   m_Children:
   - {fileID: 29593018}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &412763039 stripped
 Transform:
@@ -275,7 +275,7 @@ Transform:
   - {fileID: 412763039}
   - {fileID: 1457834315}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &476245196 stripped
 MonoBehaviour:
@@ -496,6 +496,58 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1048654691
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1048654693}
+  - component: {fileID: 1048654692}
+  m_Layer: 0
+  m_Name: config
+  m_TagString: Config
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1048654692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048654691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d40a7fd61954a67891b6264cff5b399, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audio:
+    pirateAttack1: {fileID: 8300000, guid: d9b09504c6aecef40a19f28c8e6ad74f, type: 3}
+    pirateAttack2: {fileID: 8300000, guid: a2db0113db6bf6d4985c74182ae14612, type: 3}
+    shipBackground: {fileID: 8300000, guid: 058afafcdfd521645a079bd39c78c3ea, type: 3}
+    sharkPunch1: {fileID: 8300000, guid: df4cf4f473f97f54cbe91f041a0060ee, type: 3}
+    sharkPunch2: {fileID: 8300000, guid: b74f7de62a3ff6c49a867fabc45cfb4c, type: 3}
+    sharkFall: {fileID: 8300000, guid: 6a113831a46a37c479b8bae0f0902db9, type: 3}
+    beachBackground: {fileID: 8300000, guid: 20481e1b46b11ce46b4983dec63404f0, type: 3}
+--- !u!4 &1048654693
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048654691}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1213238175
 GameObject:
   m_ObjectHideFlags: 0
@@ -634,13 +686,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23e7b7e59dfb49ef83bf853e905fba8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pirateAttack1: {fileID: 8300000, guid: d9b09504c6aecef40a19f28c8e6ad74f, type: 3}
-  pirateAttack2: {fileID: 8300000, guid: a2db0113db6bf6d4985c74182ae14612, type: 3}
-  shipBackground: {fileID: 8300000, guid: 058afafcdfd521645a079bd39c78c3ea, type: 3}
-  sharkPunch1: {fileID: 0}
-  sharkPunch2: {fileID: 0}
-  sharkFall: {fileID: 0}
-  beachBackground: {fileID: 0}
   isFirstScene: 0
 --- !u!82 &1754121088
 AudioSource:
@@ -782,7 +827,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1906611222384297493, guid: e4e5074f619d8f64fb04a63d47f25f13, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1906611222384297493, guid: e4e5074f619d8f64fb04a63d47f25f13, type: 3}
       propertyPath: m_AnchorMax.x

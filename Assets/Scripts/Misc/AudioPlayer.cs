@@ -1,82 +1,53 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Config;
 using UnityEngine;
 
 namespace Misc {
 public class AudioPlayer : MonoBehaviour {
-    [Header("Scene 1")]
-    [SerializeField] AudioClip pirateAttack1;
-    [SerializeField] AudioClip pirateAttack2;
-    [SerializeField] AudioClip shipBackground;
-    [Header("Scene 2")]
-    [SerializeField] AudioClip sharkPunch1;
-    [SerializeField] AudioClip sharkPunch2;
-    [SerializeField] AudioClip sharkFall;
-    [SerializeField] AudioClip beachBackground;
+    [HideInInspector] public bool isFirstScene;
 
-    public bool isFirstScene;
-    
+    AudioConfig config;
     AudioSource audioSource;
     List<AudioClip> audioClips;
 
     void Awake() {
+        config = GameObject.FindWithTag("Config").GetComponent<GlobalConfig>().audio;
         audioSource = GetComponent<AudioSource>();
         audioClips = new List<AudioClip> {
-            sharkPunch1, sharkPunch2, sharkFall,
-            pirateAttack1, pirateAttack2,
-            shipBackground, beachBackground,
+            config.sharkPunch1, config.sharkPunch2, config.sharkFall,
+            config.pirateAttack1, config.pirateAttack2,
+            config.shipBackground, config.beachBackground,
         };
     }
 
     void Start() {
-        play(isFirstScene ? AudioId.ShipBackground : AudioId.BeachBackground);
+        audioSource.PlayOneShot(isFirstScene ? config.shipBackground : config.beachBackground);
     }
 
     public void play(AudioId id, float delay = 0f, Action action = null) {
+        StopAllCoroutines();
         StartCoroutine(delayAction(delay, () => {
-            switch (id) {
-                case AudioId.SharkPunch1:
-                    audioSource.PlayOneShot(sharkPunch1);
-                    break;
-                case AudioId.SharkPunch2:
-                    audioSource.PlayOneShot(sharkPunch2);
-                    break;
-                case AudioId.SharkFall:
-                    audioSource.PlayOneShot(sharkFall);
-                    break;
-                case AudioId.PirateAttack1:
-                    audioSource.PlayOneShot(pirateAttack1);
-                    break;
-                case AudioId.PirateAttack2:
-                    audioSource.PlayOneShot(pirateAttack2);
-                    break;
-                case AudioId.ShipBackground:
-                    audioSource.PlayOneShot(shipBackground);
-                    break;
-                case AudioId.BeachBackground:
-                    audioSource.PlayOneShot(beachBackground);
-                    break;
-                default:
-                    throw new ArgumentOutOfRangeException(nameof(id), id, null);
-            }
+            audioSource.clip = getAudioClip(id);
+            audioSource.Play();
             action?.Invoke();
         }));
     }
 
     public float getAudioLength(AudioId id) {
-        return audioClips.Find(c => isMatch(c, id)).length;
+        return audioClips.Find(c => c == getAudioClip(id)).length;
     }
-
-    bool isMatch(AudioClip clip, AudioId id) => clip == getAudioClip(id);
 
     AudioClip getAudioClip(AudioId id) {
         return id switch {
-            AudioId.SharkPunch1 => sharkPunch1,
-            AudioId.SharkPunch2 => sharkPunch2,
-            AudioId.PirateAttack1 => pirateAttack1,
-            AudioId.PirateAttack2 => pirateAttack2,
-            AudioId.BeachBackground => beachBackground,
+            AudioId.SharkPunch1 => config.sharkPunch1,
+            AudioId.SharkPunch2 => config.sharkPunch2,
+            AudioId.SharkFall => config.sharkFall,
+            AudioId.PirateAttack1 => config.pirateAttack1,
+            AudioId.PirateAttack2 => config.pirateAttack2,
+            AudioId.ShipBackground => config.shipBackground,
+            AudioId.BeachBackground => config.beachBackground,
             _ => throw new ArgumentOutOfRangeException(nameof(id), id, null)
         };
     }
