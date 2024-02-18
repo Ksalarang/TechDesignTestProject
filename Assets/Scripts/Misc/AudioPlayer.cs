@@ -6,6 +6,7 @@ namespace Misc {
 public class AudioPlayer : MonoBehaviour {
     public AudioClip sharkPunch1;
     public AudioClip sharkPunch2;
+    public AudioClip sharkFall;
 
     AudioSource audioSource;
     List<AudioClip> audioClips;
@@ -13,7 +14,7 @@ public class AudioPlayer : MonoBehaviour {
     void Awake() {
         audioSource = GetComponent<AudioSource>();
         audioClips = new List<AudioClip> {
-            sharkPunch1, sharkPunch2,
+            sharkPunch1, sharkPunch2, sharkFall
         };
     }
 
@@ -24,6 +25,9 @@ public class AudioPlayer : MonoBehaviour {
                 break;
             case AudioId.SharkPunch2:
                 audioSource.PlayOneShot(sharkPunch2);
+                break;
+            case AudioId.SharkFall:
+                audioSource.PlayOneShot(sharkFall);
                 break;
             default:
                 throw new ArgumentOutOfRangeException(nameof(id), id, null);
@@ -40,6 +44,7 @@ public class AudioPlayer : MonoBehaviour {
         return id switch {
             AudioId.SharkPunch1 => sharkPunch1,
             AudioId.SharkPunch2 => sharkPunch2,
+            AudioId.SharkFall => sharkFall,
             _ => throw new ArgumentOutOfRangeException(nameof(id), id, null)
         };
     }
@@ -47,6 +52,7 @@ public class AudioPlayer : MonoBehaviour {
     public enum AudioId {
         SharkPunch1,
         SharkPunch2,
+        SharkFall,
     }
 }
 }

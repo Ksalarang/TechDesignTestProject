@@ -62,6 +62,9 @@ public class Shark : MonoBehaviour, IPointerClickHandler {
                     audioPlayer.play(AudioPlayer.AudioId.SharkPunch1);
                 }));
                 break;
+            case Dead:
+                audioPlayer.play(AudioPlayer.AudioId.SharkFall);
+                break;
         }
     }
 
