@@ -6,15 +6,16 @@ using UnityEngine;
 
 namespace Misc {
 public class AudioPlayer : MonoBehaviour {
+    [SerializeField] AudioSource backgroundSource;
+    [SerializeField] AudioSource creatureSource;
+    
     GlobalConfig globalConfig;
     AudioConfig config;
-    AudioSource audioSource;
     List<AudioClip> audioClips;
 
     void Awake() {
         globalConfig = GameObject.FindWithTag("Config").GetComponent<GlobalConfig>();
         config = globalConfig.audio;
-        audioSource = GetComponent<AudioSource>();
         audioClips = new List<AudioClip> {
             config.sharkPunch1, config.sharkPunch2, config.sharkFall,
             config.pirateAttack1, config.pirateAttack2,
@@ -23,14 +24,15 @@ public class AudioPlayer : MonoBehaviour {
     }
 
     void Start() {
-        audioSource.PlayOneShot(globalConfig.isFirstScene ? config.shipBackground : config.beachBackground);
+        backgroundSource.clip = globalConfig.isFirstScene ? config.shipBackground : config.beachBackground;
+        backgroundSource.Play();
     }
 
     public void play(AudioId id, float delay = 0f, Action action = null) {
         StopAllCoroutines();
         StartCoroutine(delayAction(delay, () => {
-            audioSource.clip = getAudioClip(id);
-            audioSource.Play();
+            creatureSource.clip = getAudioClip(id);
+            creatureSource.Play();
             action?.Invoke();
         }));
     }
