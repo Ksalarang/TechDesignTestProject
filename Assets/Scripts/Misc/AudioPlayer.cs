@@ -6,14 +6,14 @@ using UnityEngine;
 
 namespace Misc {
 public class AudioPlayer : MonoBehaviour {
-    [HideInInspector] public bool isFirstScene;
-
+    GlobalConfig globalConfig;
     AudioConfig config;
     AudioSource audioSource;
     List<AudioClip> audioClips;
 
     void Awake() {
-        config = GameObject.FindWithTag("Config").GetComponent<GlobalConfig>().audio;
+        globalConfig = GameObject.FindWithTag("Config").GetComponent<GlobalConfig>();
+        config = globalConfig.audio;
         audioSource = GetComponent<AudioSource>();
         audioClips = new List<AudioClip> {
             config.sharkPunch1, config.sharkPunch2, config.sharkFall,
@@ -23,7 +23,7 @@ public class AudioPlayer : MonoBehaviour {
     }
 
     void Start() {
-        audioSource.PlayOneShot(isFirstScene ? config.shipBackground : config.beachBackground);
+        audioSource.PlayOneShot(globalConfig.isFirstScene ? config.shipBackground : config.beachBackground);
     }
 
     public void play(AudioId id, float delay = 0f, Action action = null) {

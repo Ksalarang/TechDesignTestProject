@@ -5,6 +5,8 @@ namespace Config {
 public class GlobalConfig : MonoBehaviour {
     public new AudioConfig audio;
 
+    [HideInInspector] public bool isFirstScene;
+
     void Awake() {
         DontDestroyOnLoad(gameObject);
     }

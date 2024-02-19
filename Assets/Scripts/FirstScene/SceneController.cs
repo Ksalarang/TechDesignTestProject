@@ -1,4 +1,5 @@
-﻿using Creatures;
+﻿using Config;
+using Creatures;
 using Misc;
 using TMPro;
 using UnityEngine;
@@ -14,7 +15,8 @@ public class SceneController : MonoBehaviour {
     void Awake() {
         Application.targetFrameRate = 60;
         
-        audioPlayer.isFirstScene = true;
+        var config = GameObject.FindWithTag("Config").GetComponent<GlobalConfig>();
+        config.isFirstScene = true;
         pirate.audioPlayer = audioPlayer;
     }
 
